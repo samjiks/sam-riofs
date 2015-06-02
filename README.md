@@ -34,7 +34,7 @@ This is a puppet module that create and configures for Riofs filespace central m
 Download the module to the puppet module and use the below class, you can change the below paramenters 
 to valid parameters to the 
 
-## Usage
+### Usage
 
 ...
 class { 'riofs' :

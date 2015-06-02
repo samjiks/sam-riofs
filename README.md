@@ -51,7 +51,7 @@ class { 'riofs' :
 
 ## Limitations
 
-RioFs doesn't work under Windows, Still haven't tested with MACOSX or other Linux flavors 
+Works with Linux Ubuntu. RioFs doesn't work under Windows, Still haven't tested with MACOSX or other Linux flavors 
 
 ## Development
 

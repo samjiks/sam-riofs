@@ -15,19 +15,10 @@
 
 ## Overview
 
-A one-maybe-two sentence summary of what the module does/what problem it solves.
-This is your 30 second elevator pitch for your module. Consider including
-OS/Puppet version it works with.
+Riofs is an amazon s3 filespace that works on linux and MaCOSX platform. https://github.com/skoobe/riofs
+This is a puppet module that create and configures for Riofs filespace central management 
 
 ## Module Description
-
-If applicable, this section should have a brief description of the technology
-the module integrates with and what that integration enables. This section
-should answer the questions: "What does this module *do*?" and "Why would I use
-it?"
-
-If your module has a range of functionality (installation, configuration,
-management, etc.) this is the time to mention it.
 
 ## Setup
 
@@ -35,8 +26,6 @@ management, etc.) this is the time to mention it.
 
 * A list of files, packages, services, or operations that the module will alter,
   impact, or execute on the system it's installed on.
-* This is a great place to stick any warnings.
-* Can be in list or paragraph form.
 
 ### Setup Requirements **OPTIONAL**
 
@@ -47,6 +36,7 @@ to valid parameters to the
 
 ## Usage
 
+...
 class { 'riofs' :
           packages_ensure       => present,
           aws_access_key_id     => 'your access key id', 
@@ -54,7 +44,7 @@ class { 'riofs' :
           path_to_mount         => '/mnt/riofs',
           aws_secret_access_key => 'your secret aaccess_key',       
 }
-
+...
 
 ## Reference
 

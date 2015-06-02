@@ -40,40 +40,34 @@ management, etc.) this is the time to mention it.
 
 ### Setup Requirements **OPTIONAL**
 
-If your module requires anything extra before setting up (pluginsync enabled,
-etc.), mention it here.
-
 ### Beginning with riofs
 
-The very basic steps needed for a user to get the module up and running.
-
-If your most recent release breaks compatibility or requires particular steps
-for upgrading, you may wish to include an additional section here: Upgrading
-(For an example, see http://forge.puppetlabs.com/puppetlabs/firewall).
+Download the module to the puppet module and use the below class, you can change the below paramenters 
+to valid parameters to the 
 
 ## Usage
 
-Put the classes, types, and resources for customizing, configuring, and doing
-the fancy stuff with your module here.
+class { 'riofs' :
+          packages_ensure       => present,
+          aws_access_key_id     => 'your access key id', 
+          aws_bucket_name       => 'riofs',
+          path_to_mount         => '/mnt/riofs',
+          aws_secret_access_key => 'your secret aaccess_key',       
+}
+
 
 ## Reference
 
-Here, list the classes, types, providers, facts, etc contained in your module.
-This section should include all of the under-the-hood workings of your module so
-people know what the module is touching on their system but don't need to mess
-with things. (We are working on automating this section!)
 
 ## Limitations
 
-This is where you list OS compatibility, version compatibility, etc.
+RioFs doesn't work under Windows, Still haven't tested with MACOSX or other Linux flavors 
 
 ## Development
 
-Since your module is awesome, other users will want to play with it. Let them
-know what the ground rules for contributing are.
+This module is still under construction
 
 ## Release Notes/Contributors/Etc **Optional**
 
-If you aren't using changelog, put your release notes here (though you should
-consider using changelog). You may also add any additional sections you feel are
-necessary or important to include here. Please use the `## ` header.
+Anyone can contribute to the project to give more adhere work
+

@@ -1,0 +1,14 @@
+{
+  "name": "man-riofs",
+  "version": "0.1.0",
+  "author": "Samuel Thampy",
+  "summary": "S3 filespace creator for Linux and MacOSX",
+  "license": "Apache 2.0",
+  "source": "https://github.com/samjiks/riofs.git",
+  "project_page": "https://github.com/samjiks/riofs",
+  "issues_url": "https://github.com/samjiks/riofs/issues",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ]
+}
+
